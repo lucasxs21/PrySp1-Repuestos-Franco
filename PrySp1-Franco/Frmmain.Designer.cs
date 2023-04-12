@@ -42,15 +42,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnConsultar = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.lstRepuestos = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnGrabar
             // 
-            this.btnGrabar.Location = new System.Drawing.Point(602, 32);
+            this.btnGrabar.Location = new System.Drawing.Point(432, 44);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(107, 42);
             this.btnGrabar.TabIndex = 0;
@@ -73,7 +72,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(32, 32);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(535, 362);
+            this.groupBox1.Size = new System.Drawing.Size(369, 362);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Repuestos";
@@ -176,48 +175,41 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(602, 111);
+            this.button1.Location = new System.Drawing.Point(432, 117);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(107, 47);
             this.button1.TabIndex = 2;
             this.button1.Text = "Borrar";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnConsultar
             // 
-            this.button2.Location = new System.Drawing.Point(602, 205);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(107, 49);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Consultar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnConsultar.Location = new System.Drawing.Point(432, 196);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(107, 49);
+            this.btnConsultar.TabIndex = 3;
+            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.UseVisualStyleBackColor = true;
+            this.btnConsultar.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(602, 329);
+            this.button3.Location = new System.Drawing.Point(432, 295);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(107, 53);
             this.button3.TabIndex = 4;
             this.button3.Text = "Salir";
             this.button3.UseVisualStyleBackColor = true;
-            // 
-            // lstRepuestos
-            // 
-            this.lstRepuestos.FormattingEnabled = true;
-            this.lstRepuestos.ItemHeight = 16;
-            this.lstRepuestos.Location = new System.Drawing.Point(139, 442);
-            this.lstRepuestos.Name = "lstRepuestos";
-            this.lstRepuestos.Size = new System.Drawing.Size(120, 84);
-            this.lstRepuestos.TabIndex = 5;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Frmmain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(735, 561);
-            this.Controls.Add(this.lstRepuestos);
+            this.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.ClientSize = new System.Drawing.Size(569, 400);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnConsultar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnGrabar);
@@ -247,9 +239,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnConsultar;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.ListBox lstRepuestos;
     }
 }
 

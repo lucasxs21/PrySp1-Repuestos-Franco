@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsRepuestos.cs" />
+    <Compile Include="Frm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm1.Designer.cs">
+      <DependentUpon>Frm1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frmmain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +61,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm1.resx">
+      <DependentUpon>Frm1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frmmain.resx">
       <DependentUpon>Frmmain.cs</DependentUpon>
     </EmbeddedResource>

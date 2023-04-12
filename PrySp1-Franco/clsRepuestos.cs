@@ -19,16 +19,16 @@ namespace PrySp1_Franco
 
         public string ObtenerDatos()
         {
-           // string AuxOrigen;
+            string AuxOrigen;
             {
-               // if(Origen == true)
+                if(Origen == true)
                 {
-                   // AuxOrigen = "Nacional";
+                    AuxOrigen = "Nacional";
                 }
 
                 
                 {
-                    //AuxOrigen = "Importado";
+                    AuxOrigen = "Importado";
                 }
             }
             return Codigo + " " + Nombre + " " + Marca + " " + Precio + " " + AuxOrigen + " ";
